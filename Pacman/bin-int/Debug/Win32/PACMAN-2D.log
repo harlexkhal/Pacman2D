@@ -1,0 +1,55 @@
+﻿  AnimationComponent.cpp
+  OpenglRenderer.cpp
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\Engine\Core\Window\NativeWindow\Window.h(7,25): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\Engine\Core\Window\NativeWindow\Window.h(7,10): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+  RendererAPI.cpp
+  GameObject.cpp
+  GraphicsComponent.cpp
+  PhysicsComponent.cpp
+  TargetIntegratorComponent.cpp
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\Engine\TargetIntegratorComponent.cpp(44,184): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\Engine\TargetIntegratorComponent.cpp(55,21): warning C4018: '<': signed/unsigned mismatch
+  Camera2D.cpp
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\Engine\Core\Window\NativeWindow\Window.h(7,25): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\Engine\Core\Window\NativeWindow\Window.h(7,10): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\Engine\Utilities\Camera2D.cpp(21,54): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+  InputManager.cpp
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\Engine\Core\Window\NativeWindow\Window.h(7,25): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\Engine\Core\Window\NativeWindow\Window.h(7,10): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+  main.cpp
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\Engine\Core\Window\NativeWindow\Window.h(7,25): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\Engine\Core\Window\NativeWindow\Window.h(7,10): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+  BallPhysics.cpp
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Ball\BallPhysics.cpp(11,164): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  FlamePhysicsParticleGenerator.cpp
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Particles\FlamePhysicsParticleGenerator.cpp(10,20): warning C4018: '<': signed/unsigned mismatch
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Particles\FlamePhysicsParticleGenerator.cpp(29,20): warning C4018: '<': signed/unsigned mismatch
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Particles\FlamePhysicsParticleGenerator.cpp(58,50): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Particles\FlamePhysicsParticleGenerator.cpp(59,50): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Particles\FlamePhysicsParticleGenerator.cpp(79,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Particles\FlamePhysicsParticleGenerator.cpp(80,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  FlamePhysicsParticleGenerator.h
+  Cannon_Input.cpp
+  NPCAnimation.cpp
+  NPCBehaviour.cpp
+  NPCPhysics.cpp
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Players\NPCDemo\NPCPhysics.cpp(10,164): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  PlayerAnimation.cpp
+  PlayerInput.cpp
+  PlayerPhysics.cpp
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Players\PlayerDemo\PlayerPhysics.cpp(11,164): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Players\PlayerDemo\PlayerPhysics.cpp(82): warning C4715: 'PlayerPhysics::GetStatus': not all control paths return a value
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Players\NPCDemo\NPCPhysics.cpp(92): warning C4715: 'NPCPhysics::GetStatus': not all control paths return a value
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Players\Cannon\Cannon_Input.cpp(51): warning C4715: 'Cannon_Input::GetStatus': not all control paths return a value
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Ball\BallPhysics.cpp(53): warning C4715: 'BallPhysics::GetStatus': not all control paths return a value
+  Compiling...
+  LandPhysics.cpp
+  SandBoxGame.cpp
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\Engine\Core\Window\NativeWindow\Window.h(7,25): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\Engine\Core\Window\NativeWindow\Window.h(7,10): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\SandBoxGame.cpp(323,24): warning C4018: '<': signed/unsigned mismatch
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\SandBoxGame.cpp(340,24): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\src\SandBox\ECS\Terrain\LandPhysics.cpp(47): warning C4715: 'LandPhysics::GetStatus': not all control paths return a value
+  PACMAN-2D.vcxproj -> C:\Dev\MyProjects\PACMAN-ENGINE\PACMAN-2D\bin\Debug\Win32\PACMAN-2D.exe

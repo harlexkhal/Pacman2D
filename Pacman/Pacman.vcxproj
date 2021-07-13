@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{B3F4FF78-002E-4F18-AC02-9E1BE595E1DD}</ProjectGuid>
+    <RootNamespace>Pacman</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Pacman</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(ProjectName)\bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)$(ProjectName)\bin-int\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(ProjectName)\bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)$(ProjectName)\bin-int\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\includes;$(SolutionDir)Dependencies/project-src/Esmath/Esm; $(SolutionDir)$(ProjectName)/src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\lib\$(Platform)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\includes;$(SolutionDir)Dependencies/project-src/Esmath/Esm</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\lib\$(Platform)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\includes;$(SolutionDir)Dependencies/project-src/Esmath/Esm</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\lib\$(Platform)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\includes;$(SolutionDir)Dependencies/project-src/Esmath/Esm</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\lib\$(Platform)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Dependencies\Project-src\Glad\src\glad.c" />
+    <ClCompile Include="src\Engine\Core\Renderer\Graphics-API\Opengl\OpenglRendererCommand.cpp" />
+    <ClCompile Include="src\Engine\Core\Renderer\RendererAPI.cpp" />
+    <ClCompile Include="src\Engine\Core\Window\NativeWindow\GLFW\GLFW_Window.cpp" />
+    <ClCompile Include="src\Engine\AnimationComponent.cpp" />
+    <ClCompile Include="src\Engine\PhysicsComponent.cpp" />
+    <ClCompile Include="src\SandBox\ECS\Ball\BallPhysics.cpp" />
+    <ClCompile Include="src\SandBox\ECS\Terrain\LandPhysics.cpp" />
+    <ClCompile Include="src\SandBox\ECS\Players\NPCDemo\NPCAnimation.cpp" />
+    <ClCompile Include="src\SandBox\ECS\Players\NPCDemo\NPCBehaviour.cpp" />
+    <ClCompile Include="src\SandBox\ECS\Players\NPCDemo\NPCPhysics.cpp" />
+    <ClCompile Include="src\SandBox\ECS\Particles\FlamePhysicsParticleGenerator.cpp" />
+    <ClCompile Include="src\SandBox\ECS\Particles\FlamePhysicsParticleGenerator.h" />
+    <ClCompile Include="src\Engine\GraphicsComponent.cpp" />
+    <ClCompile Include="src\SandBox\ECS\Players\Cannon\Cannon_Input.cpp" />
+    <ClCompile Include="src\SandBox\ECS\Players\PlayerDemo\PlayerAnimation.cpp" />
+    <ClCompile Include="src\SandBox\ECS\Players\PlayerDemo\PlayerInput.cpp" />
+    <ClCompile Include="src\SandBox\ECS\Players\PlayerDemo\PlayerPhysics.cpp" />
+    <ClCompile Include="src\Engine\Utilities\TimeSteps.cpp" />
+    <ClCompile Include="src\Engine\Utilities\InputManager.cpp" />
+    <ClCompile Include="src\Engine\GameObject.cpp" />
+    <ClCompile Include="src\Engine\Utilities\Camera2D.cpp" />
+    <ClCompile Include="src\Engine\Core\Renderer\Graphics-API\Opengl\OpenglShader.cpp" />
+    <ClCompile Include="src\SandBox\SandBoxGame.cpp" />
+    <ClCompile Include="src\Engine\Utilities\main.cpp" />
+    <ClCompile Include="src\Engine\Core\Renderer\Graphics-API\Opengl\OpenglRenderer.cpp" />
+    <ClCompile Include="src\Engine\Core\Renderer\Graphics-API\Opengl\OpenglTexture.cpp" />
+    <ClCompile Include="src\Engine\TargetIntegratorComponent.cpp" />
+    <ClCompile Include="src\Engine\Core\Window\WindowAPI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Engine\Core\Renderer\Graphics-API\Opengl\OpenglRendererCommand.h" />
+    <ClInclude Include="src\Engine\Core\Renderer\Graphics-API\RendererCommand.h" />
+    <ClInclude Include="src\Engine\Core\Renderer\RendererAPI.h" />
+    <ClInclude Include="src\Engine\Core\Renderer\Graphics-API\Renderer.h" />
+    <ClInclude Include="src\Engine\Core\Renderer\Graphics-API\Shader.h" />
+    <ClInclude Include="src\Engine\Core\Renderer\Graphics-API\Texture.h" />
+    <ClInclude Include="src\Engine\Core\Window\NativeWindow\GLFW\GLFW_Window.h" />
+    <ClInclude Include="src\Engine\ParticlePhysicsGeneratorComponent.h" />
+    <ClInclude Include="src\Engine\AnimationComponent.h" />
+    <ClInclude Include="src\Engine\GraphicsComponent.h" />
+    <ClInclude Include="src\Engine\Component.h" />
+    <ClInclude Include="src\Engine\InputComponent.h" />
+    <ClInclude Include="src\Engine\PhysicsComponent.h" />
+    <ClInclude Include="src\SandBox\ECS\Ball\BallPhysics.h" />
+    <ClInclude Include="src\SandBox\ECS\ObjectID.h" />
+    <ClInclude Include="src\SandBox\ECS\Terrain\LandPhysics.h" />
+    <ClInclude Include="src\SandBox\ECS\Players\NPCDemo\NPCAnimation.h" />
+    <ClInclude Include="src\SandBox\ECS\Players\NPCDemo\NPCBehaviour.h" />
+    <ClInclude Include="src\SandBox\ECS\Players\NPCDemo\NPCPhysics.h" />
+    <ClInclude Include="src\SandBox\ECS\Players\Cannon\Cannon_Input.h" />
+    <ClInclude Include="src\SandBox\ECS\Players\PlayerDemo\PlayerAnimation.h" />
+    <ClInclude Include="src\SandBox\ECS\Players\PlayerDemo\PlayerInput.h" />
+    <ClInclude Include="src\SandBox\ECS\Players\PlayerDemo\PlayerPhysics.h" />
+    <ClInclude Include="src\Engine\Utilities\TimeSteps.h" />
+    <ClInclude Include="src\Engine\Utilities\InputManager.h" />
+    <ClInclude Include="src\Engine\GameObject.h" />
+    <ClInclude Include="src\Engine\Utilities\Camera2D.h" />
+    <ClInclude Include="src\Engine\Core\Renderer\Graphics-API\Opengl\OpenglShader.h" />
+    <ClInclude Include="src\SandBox\SandBoxGame.h" />
+    <ClInclude Include="src\Engine\Core\Renderer\Graphics-API\Opengl\OpenglRenderer.h" />
+    <ClInclude Include="src\Engine\Core\Renderer\Graphics-API\Opengl\OpenglTexture.h" />
+    <ClInclude Include="src\Engine\TargetIntegratorComponent.h" />
+    <ClInclude Include="src\Engine\Core\Window\NativeWindow\Window.h" />
+    <ClInclude Include="src\Engine\Core\Window\WindowAPI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\SandBox\Assets\Shaders\ParticleShaders.glsl" />
+    <None Include="src\SandBox\Assets\Shaders\Framebuffers_ScreenShaders.glsl" />
+    <None Include="src\SandBox\Assets\Shaders\SpriteShaders.glsl" />
+    <None Include="src\SandBox\Assets\Shaders\TracerShaders.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dependencies\Project-src\Esmath\Esm\Esm.vcxproj">
+      <Project>{e09baede-49a7-4895-a06e-8f80fec1f82d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
