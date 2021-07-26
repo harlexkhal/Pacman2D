@@ -1,4 +1,4 @@
-# PAC-MAN-2D
+# Pacman2D
 <p align="center">
   <img width="800" height="600" src="Resources/Branding/Scene.png">
 </p>
